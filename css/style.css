@@ -247,7 +247,25 @@ img{
 }
 
 @media screen and (max-width: 500px){
-  
+
+    html{
+        font-size: 0.9em; 
+    }
+
+    .header__wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__logo{
+        margin-bottom: 2em;
+    }
+
+    .header__burger{
+        position: absolute;
+        top: 3em;
+        right: 3em;
+    }
 }
 
 

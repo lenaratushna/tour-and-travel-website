@@ -41,7 +41,7 @@ html{
 
 .container{
     max-width: 1260px;
-    padding: 0 20px;
+    padding: 0 2.75em;
     margin: 0 auto;
 }
 
@@ -123,6 +123,39 @@ img{
     color: #000000;
 }
 
+.header__burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+    margin-left: 2.75em;
+}
+
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FB8F1D;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first{
+    top: 0;
+}
+
+.burger__line_second{
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.burger__line_third{
+    bottom: 0;
+}
+
+
 .btn-light{
     color: #FB8F1D;
     background: #FFFFFF;
@@ -136,5 +169,85 @@ img{
     border: 1px solid #1ABE84;
 }
 
+/*Media*/
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 767px){
+
+    .header__burger{
+        order: 3;
+        display: block;
+    }
+
+    .header__menu{
+        order: 1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        z-index: 10;
+        padding: 4em;
+        transform: translateX(100%);
+        transition: .2s all linear;
+    }
+
+    .header__buttons{
+        order: 2;
+    }
+
+    .header__menu_active{
+        transform: translateX(0);
+    }
+    
+    .menu__item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .menu__item:last-child{
+        margin-bottom: 0;
+    }
+
+    .menu__link{
+        font-size: 2rem;
+        color: #000000;
+    }
+
+    .header__menu-close{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 2.75em;
+        right: 2.75em;
+        z-index: 11;
+    }
+
+    .header__menu-close-line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__menu-close-line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__menu-close-line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 500px){
+  
+}
 
 

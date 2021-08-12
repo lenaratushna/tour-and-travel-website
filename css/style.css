@@ -1,0 +1,140 @@
+/*Reset styles*/
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+ *,*:before,*:after{
+-moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 16px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+html{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1em; 
+}
+
+.container{
+    max-width: 1260px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4rem; /*64px*/
+    line-height: 125%;
+    color: #202336;
+}
+
+h2{
+    font-size: 2.25rem; /*36px*/
+    line-height: 139%;
+    color: #000000;  
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8em 2em;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    border-radius: 0.5em; /*8px*/
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    background: #1ABE84;
+    border: 1px solid #1ABE84;
+}
+
+/*Styles for header*/
+
+.header{
+    padding: 2.75em 0;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    max-width: 2.5em;
+    height: auto;
+}
+
+.header__links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item{
+    margin-right: 2.125em;
+}
+
+.menu__link{
+    font-size: 1rem; 
+    color: #B8BECD;
+}
+
+.menu__link:hover, .menu__link:focus, .menu__link:active{
+    color: #000000;
+}
+
+.btn-light{
+    color: #FB8F1D;
+    background: #FFFFFF;
+    border: 1px solid #FB8F1D;
+    margin-right: 1.125em;
+}
+
+.btn-light:hover{
+    color: #1ABE84;
+    background: #FFFFFF;
+    border: 1px solid #1ABE84;
+}
+
+
+

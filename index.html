@@ -44,9 +44,9 @@
                         </div>
                     </nav>
                     <div class="header__burger burger">
-                    <span class="burger__line burger__line_first"></span>
-                    <span class="burger__line burger__line_second"></span>
-                    <span class="burger__line burger__line_third"></span>
+                        <span class="burger__line burger__line_first"></span>
+                        <span class="burger__line burger__line_second"></span>
+                        <span class="burger__line burger__line_third"></span>
                     </div>
                     <div class="header__buttons">
                         <a href="#!" class="btn btn-light">Login</a>
@@ -56,6 +56,57 @@
             </div>
         </div>
     </header>
+    <!--Intro-->
+    <section class="intro">
+        <div class="container">
+            <h1 class="intro__title">Explore and Travel</h1>
+            <div class="intro__subtitle"></div>
+            <form action="" method="POST" class="finder-form">
+                <div class="finder-form__title">
+                    <h3>Holiday finder</h3>
+                </div>
+                <div class="finder-form__row">
+                    <div class="dropdown">
+                        <button type="button" class="dropdown__button">Location</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="location1">Kyiv, Ukraine</li>
+                            <li class="dropdown__list-item" data-value="location2">New York, USA</li>
+                            <li class="dropdown__list-item" data-value="location3">-----</li>
+                        </ul>
+                        <input type="text" name="select-location" value="" class="dropdown__input-hidden">
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="dropdown__button">Activity</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="activity1">-----</li>
+                            <li class="dropdown__list-item" data-value="activity2">-----</li>
+                            <li class="dropdown__list-item" data-value="activity3">-----</li>
+                        </ul>
+                        <input type="text" name="select-activity" value="" class="dropdown__input-hidden">
+                    </div>
+                </div>
+                <div class="finder-form__row">
+                    <div class="dropdown">
+                        <button type="button" class="dropdown__button">Grade</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="grade1">-----</li>
+                            <li class="dropdown__list-item" data-value="grade2">-----</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="dropdown__button">Date</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="date1">--/--/--</li>
+                            <li class="dropdown__list-item" data-value="dare2">--/--/--</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                    </div>
+                </div>
+                <input type="button" value="Explore" class="finder-form__btn" >
+            </form>
+        </div>
+    </section>
     <script src="./js/script.js"></script>
 </body>
 

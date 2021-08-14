@@ -59,52 +59,99 @@
     <!--Intro-->
     <section class="intro">
         <div class="container">
-            <h1 class="intro__title">Explore and Travel</h1>
-            <div class="intro__subtitle"></div>
-            <form action="" method="POST" class="finder-form">
-                <div class="finder-form__title">
-                    <h3>Holiday finder</h3>
+            <div class="intro__wrapper">
+                <div>
+                    <h1 class="intro__title">Explore and Travel</h1>
+                    <div class="intro__subtitle"></div>
+                    <form action="" method="POST" class="finder-form">
+                        <div class="finder-form__title">
+                            <h3>Holiday finder</h3>
+                        </div>
+                        <div class="finder-form__row">
+                            <div class="dropdown">
+                                <button type="button" class="dropdown__button">Location</button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="location1">Kyiv, Ukraine</li>
+                                    <li class="dropdown__list-item" data-value="location2">New York, USA</li>
+                                    <li class="dropdown__list-item" data-value="location3">-----</li>
+                                </ul>
+                                <input type="text" name="select-location" value="" class="dropdown__input-hidden">
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="dropdown__button">Activity</button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="activity1">-----</li>
+                                    <li class="dropdown__list-item" data-value="activity2">-----</li>
+                                    <li class="dropdown__list-item" data-value="activity3">-----</li>
+                                </ul>
+                                <input type="text" name="select-activity" value="" class="dropdown__input-hidden">
+                            </div>
+                        </div>
+                        <div class="finder-form__row">
+                            <div class="dropdown">
+                                <button type="button" class="dropdown__button">Grade</button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="grade1">-----</li>
+                                    <li class="dropdown__list-item" data-value="grade2">-----</li>
+                                </ul>
+                                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="dropdown__button">Date</button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="date1">--/--/--</li>
+                                    <li class="dropdown__list-item" data-value="dare2">--/--/--</li>
+                                </ul>
+                                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                            </div>
+                        </div>
+                        <input type="button" value="Explore" class="finder-form__btn">
+                    </form>
                 </div>
-                <div class="finder-form__row">
-                    <div class="dropdown">
-                        <button type="button" class="dropdown__button">Location</button>
-                        <ul class="dropdown__list">
-                            <li class="dropdown__list-item" data-value="location1">Kyiv, Ukraine</li>
-                            <li class="dropdown__list-item" data-value="location2">New York, USA</li>
-                            <li class="dropdown__list-item" data-value="location3">-----</li>
-                        </ul>
-                        <input type="text" name="select-location" value="" class="dropdown__input-hidden">
-                    </div>
-                    <div class="dropdown">
-                        <button type="button" class="dropdown__button">Activity</button>
-                        <ul class="dropdown__list">
-                            <li class="dropdown__list-item" data-value="activity1">-----</li>
-                            <li class="dropdown__list-item" data-value="activity2">-----</li>
-                            <li class="dropdown__list-item" data-value="activity3">-----</li>
-                        </ul>
-                        <input type="text" name="select-activity" value="" class="dropdown__input-hidden">
-                    </div>
+                <div class="intro__img-container">
+                    <img src="./img/header-img.png" alt="" class="intro__img">
                 </div>
-                <div class="finder-form__row">
-                    <div class="dropdown">
-                        <button type="button" class="dropdown__button">Grade</button>
-                        <ul class="dropdown__list">
-                            <li class="dropdown__list-item" data-value="grade1">-----</li>
-                            <li class="dropdown__list-item" data-value="grade2">-----</li>
-                        </ul>
-                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-                    </div>
-                    <div class="dropdown">
-                        <button type="button" class="dropdown__button">Date</button>
-                        <ul class="dropdown__list">
-                            <li class="dropdown__list-item" data-value="date1">--/--/--</li>
-                            <li class="dropdown__list-item" data-value="dare2">--/--/--</li>
-                        </ul>
-                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-                    </div>
+            </div>
+        </div>
+    </section>
+    <!--Info-->
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="info__img-container">
+                    <img src="./img/info-img.png" alt="">
                 </div>
-                <input type="button" value="Explore" class="finder-form__btn" >
-            </form>
+                <div class="info__container">
+                    <h2 class="info__title">A new way to explore the world </h2>
+                    <p class="info__text">For decades travellers have reached for Lonely Planet books when looking to
+                        plan and execute their perfect
+                        trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                    <a href="#!" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Destinations-->
+    <section class="destinations">
+        <div class="container">
+            <div class="destinations__header">
+                <h2 class="destinations__title">Featured destinations</h2>
+                <a href="#!" class="view-all-link">View all</a>
+            </div>
+            <div class="destinations__body">
+                    <a href="#!" class="destinations__link">
+                        <img src="./img/indonesia.png" alt="Indonesia" class="destinations__img">
+                    </a>
+                    <a href="#!" class="destinations__link">
+                        <img src="./img/china.png" alt="China" class="destinations__img">
+                    </a>
+                    <a href="#!" class="destinations__link">
+                        <img src="./img/switzerland.png" alt="Switzerland" class="destinations__img">
+                    </a>
+                    <a href="#!" class="destinations__link">
+                        <img src="./img/montenegro.png" alt="Montenegro" class="destinations__img">
+                    </a>
+            </div>
         </div>
     </section>
     <script src="./js/script.js"></script>

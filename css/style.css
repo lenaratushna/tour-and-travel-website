@@ -425,6 +425,99 @@ img{
     line-height: 176%;
 }
 
+/*Testimonials*/
+
+.testimonials {
+    padding:  5em 0;
+}
+
+.testimonials__slide{
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.star{
+    color: #FFBB0C;
+    padding-right: 0.8em;
+    margin-bottom: 2em;
+}
+
+.slide__review{
+    max-width: 450px;
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin-bottom: 2em;
+}
+
+.slide__author{
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 218%;
+}
+
+.slide__author span{
+    display: block;
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.slide__photo{
+    max-width: 350px;
+}
+
+.slide__photo img{
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+/*Stories*/
+
+.stories {
+    padding: 0 0 3em;
+}
+.stories__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.375em;
+}
+.stories__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.stories__item {
+    max-width: 262px;
+    margin: 0 0.7em 4em;
+}
+.stories__item-img {
+    max-height: 233px;
+    overflow: hidden;
+    margin-bottom: 0.8em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+.stories__item-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 150%;
+    margin-bottom: 0.9em;
+}
+.stories__item-text {
+    font-size: 0.9rem;
+    line-height: 173%;
+    color: #7D7987;
+    margin-bottom: 1.5em;
+}
+.stories__item-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 187%;
+   color: #FB8F1D;
+}
+
 /*Media*/
 
 @media screen and (max-width: 960px){
@@ -439,6 +532,13 @@ img{
     .intro__img-container{
         max-width: 50%;
         margin-left: 0;
+    }
+    .testimonials__slide{
+        align-items: flex-start;
+    }
+    .slide__photo{
+        margin-left: 2em;
+        max-width: 250px;
     }
 }
 
@@ -562,6 +662,14 @@ img{
         margin-left: 0;
     }
 
+    .slide__photo{
+        max-width: 200px;
+    }
+
+    .slide__review {
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -587,6 +695,9 @@ img{
         position: absolute;
         top: 1em;
         right: 1em;
+    }
+    .slide__photo{
+        display: none;
     }
 }
 

@@ -515,7 +515,62 @@ img{
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 187%;
-   color: #FB8F1D;
+    color: #FB8F1D;
+}
+.stories__item-link:hover, .stories__item-link:focus, .stories__item-link:active{
+    text-decoration: underline;
+}
+
+/*Footer*/
+.footer {
+    background: #F9F9FB;
+}
+.footer__wrapper {
+    display: flex;
+    align-items: baseline;
+    font-weight: 300;
+    line-height: 156% ;
+    color: #848484;
+    padding: 3em 0;
+    border-bottom: 1px solid #C4C4C4;
+}
+.footer__info {
+    flex-basis: 30%;
+    margin-right: 6.75em;
+}
+.footer__logo-pic {
+    width: 44px;
+    margin-bottom: 1.6em;
+}
+.footer__copyright {
+    display: block;
+    margin-top: 3.4em;
+}
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 70%;
+}
+.footer__menu_item {
+    line-height: 211%;
+}
+.footer__menu_title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 316%;
+    color: #000000;
+}
+.footer__menu_link {
+    color: #848484;
+}
+.footer__media_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+}
+.footer__media_link {
+    margin: 0 1em;
 }
 
 /*Media*/
@@ -539,6 +594,24 @@ img{
     .slide__photo{
         margin-left: 2em;
         max-width: 250px;
+    }
+    .footer__wrapper {
+        font-size: 0.8rem;
+        align-items: center;
+        padding: 3em 0;
+    }
+    .footer__copyright {
+        margin-top: 2em;
+    }
+    .footer__menu_item {
+        line-height: 180%;
+    }
+    .footer__menu_title {
+        font-size: 1rem;
+        line-height: 280%;
+    }
+    .footer__media_links {
+        padding: 2em 0;
     }
 }
 
@@ -612,6 +685,10 @@ img{
         transform: translateY(-50%) rotate(-45deg);
     }
 
+    .intro__title {
+        font-size: 2.9rem;
+    }
+
     .finder-form__row {
         margin-bottom: 0;
     }
@@ -670,6 +747,26 @@ img{
         font-size: 1.3rem;
         line-height: 120%;
     }
+
+    .footer__wrapper {
+        flex-direction: column;
+        font-size: 0.7rem;
+    }
+    .footer__info{
+        margin: 0 0 2em 0;
+        display: flex;
+        width: 100%;
+    }
+    .footer__logo-pic {
+        width: 35px;
+        margin: 0 3em 0 0;
+    }
+    .footer__menu{
+        width: 100%;
+    }
+    .footer__menu_title {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -696,8 +793,18 @@ img{
         top: 1em;
         right: 1em;
     }
+    .intro__title{
+        font-size: 2.7rem;
+    }
     .slide__photo{
         display: none;
+    }
+    .footer__logo-pic {
+        width: 30px;
+    }
+    .footer__menu_title {
+        font-size: 0.8rem;
+        line-height: 260%;
     }
 }
 
